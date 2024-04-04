@@ -1,0 +1,8 @@
+---
+
+- name: Set Date
+  shell: |
+          sudo date -s '{{ user_date }}'
+  args:
+   executable: /bin/bash
+  when: ansible_distribution == 'Debian'

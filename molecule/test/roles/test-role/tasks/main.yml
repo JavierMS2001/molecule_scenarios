@@ -1,0 +1,4 @@
+---
+- name: Task is running from within the role
+  ansible.builtin.debug:
+    msg: "Esta es una prueba del rol que está en el escenario"
